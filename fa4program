@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyOXLCN/tSsm6EgJbwyXWAbB",
+      "authorship_tag": "ABX9TyPsCDgTwZhI8Hx9Qhr2VJRh",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -28,12 +28,139 @@
     },
     {
       "cell_type": "code",
-      "execution_count": null,
+      "execution_count": 3,
       "metadata": {
-        "id": "XG_bww3iOHOg"
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "XG_bww3iOHOg",
+        "outputId": "f700f069-a26c-4b44-9073-333a42f24017"
       },
-      "outputs": [],
-      "source": []
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0\n",
+            "1\n",
+            "3\n",
+            "5\n",
+            "7\n",
+            "9\n",
+            "11\n",
+            "13\n",
+            "15\n",
+            "17\n",
+            "18\n",
+            "19\n"
+          ]
+        }
+      ],
+      "source": [
+        "# Problem 1: Even Number Skipper\n",
+        "\n",
+        "for count in range(0,21):\n",
+        "  if count == 2:\n",
+        "    continue\n",
+        "  elif count == 4:\n",
+        "    continue\n",
+        "  elif count == 6:\n",
+        "    continue\n",
+        "  elif count == 8:\n",
+        "    continue\n",
+        "  elif count == 10:\n",
+        "    continue\n",
+        "  elif count == 12:\n",
+        "    continue\n",
+        "  elif count == 14:\n",
+        "    continue\n",
+        "  elif count == 16:\n",
+        "    continue\n",
+        "  elif count == 20:\n",
+        "    break\n",
+        "  print(count)"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Problem 2: Password Checker\n",
+        "\n",
+        "from google.colab import output\n",
+        "\n",
+        "password = input(\"Enter the password: \")\n",
+        "attempts = 0\n",
+        "while True:\n",
+        "  if password == \"secret\":\n",
+        "    output.clear()\n",
+        "    print(\"Access Granted\")\n",
+        "    break\n",
+        "  else:\n",
+        "    output.clear()\n",
+        "    print(\"Access Denied\")\n",
+        "    attempts+= 1\n",
+        "    password = input(\"Enter the password: \")\n",
+        "\n",
+        "    if attempts >= 3:\n",
+        "      output.clear()\n",
+        "      print(\"Too many attempts. Account locked\")\n",
+        "      break"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "GWdwVAzgQy7F",
+        "outputId": "98f0e3cd-0b9f-422f-d3cc-906cb95cb823"
+      },
+      "execution_count": 30,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Too many attempts. Account locked\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Problem 3: Number Filter Display\n",
+        "\n",
+        "for count in range(0,11):\n",
+        "  if count == 4:\n",
+        "    continue\n",
+        "  elif count == 6:\n",
+        "    pass\n",
+        "  elif count == 8:\n",
+        "    break\n",
+        "  print(count)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "6tQL3zDjQ6d0",
+        "outputId": "8d52dacc-a5b9-4fdf-da6e-2023e956fbcc"
+      },
+      "execution_count": 36,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0\n",
+            "1\n",
+            "2\n",
+            "3\n",
+            "5\n",
+            "6\n",
+            "7\n"
+          ]
+        }
+      ]
     }
   ]
 }
