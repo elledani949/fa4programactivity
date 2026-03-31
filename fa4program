@@ -28,13 +28,13 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 3,
+      "execution_count": 38,
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
         "id": "XG_bww3iOHOg",
-        "outputId": "f700f069-a26c-4b44-9073-333a42f24017"
+        "outputId": "507fb96e-c08d-4398-d232-54d61a3828a8"
       },
       "outputs": [
         {
@@ -107,22 +107,10 @@
         "      break"
       ],
       "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "GWdwVAzgQy7F",
-        "outputId": "98f0e3cd-0b9f-422f-d3cc-906cb95cb823"
+        "id": "GWdwVAzgQy7F"
       },
-      "execution_count": 30,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "Too many attempts. Account locked\n"
-          ]
-        }
-      ]
+      "execution_count": null,
+      "outputs": []
     },
     {
       "cell_type": "code",
@@ -139,28 +127,10 @@
         "  print(count)"
       ],
       "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "6tQL3zDjQ6d0",
-        "outputId": "8d52dacc-a5b9-4fdf-da6e-2023e956fbcc"
+        "id": "6tQL3zDjQ6d0"
       },
-      "execution_count": 36,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "0\n",
-            "1\n",
-            "2\n",
-            "3\n",
-            "5\n",
-            "6\n",
-            "7\n"
-          ]
-        }
-      ]
+      "execution_count": null,
+      "outputs": []
     }
   ]
 }
