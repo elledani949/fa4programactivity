@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyPsCDgTwZhI8Hx9Qhr2VJRh",
+      "authorship_tag": "ABX9TyNBOobWYs3DLn+69hvo1Gaj",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -60,24 +60,8 @@
         "# Problem 1: Even Number Skipper\n",
         "\n",
         "for count in range(0,21):\n",
-        "  if count == 2:\n",
+        "  if count % 2 == 0 and count != 0:\n",
         "    continue\n",
-        "  elif count == 4:\n",
-        "    continue\n",
-        "  elif count == 6:\n",
-        "    continue\n",
-        "  elif count == 8:\n",
-        "    continue\n",
-        "  elif count == 10:\n",
-        "    continue\n",
-        "  elif count == 12:\n",
-        "    continue\n",
-        "  elif count == 14:\n",
-        "    continue\n",
-        "  elif count == 16:\n",
-        "    continue\n",
-        "  elif count == 20:\n",
-        "    break\n",
         "  print(count)"
       ]
     },
